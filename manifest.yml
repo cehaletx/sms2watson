@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: sms2watson
+  host: sms2watson
+  disk_quota: 1024M
+  services:
+  - sms2watson-cloudantNoSQLDB
+  env:
+    NODE_RED_USERNAME: nruser
+    NODE_RED_PASSWORD: nrpassw0rd
